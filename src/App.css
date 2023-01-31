@@ -2,4 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 10px;
+}
+
+/*
+========== Styling for Home ============
+*/
+
+.homeBackground {
+  height: 45vh;
+  background-image: url('./assets/img/home-background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeHeading {
+  font-size: 7rem;
+  font-family: fantasy;
 }
