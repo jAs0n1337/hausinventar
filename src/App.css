@@ -10,11 +10,11 @@
 */
 
 .homeBackground {
-  height: 45vh;
+  height: 40vh;
   background-image: url('./assets/img/home-background.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -450px;
+  background-position: 0 -650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,4 +23,23 @@
 .homeHeading {
   font-size: 7rem;
   font-family: fantasy;
+}
+
+.homeImg {
+  width: 25rem;
+}
+
+.homeArticle {
+  padding-top: 12vh;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.homeDescription {
+  font-family: fantasy;
+  font-size: 1.9rem;
+  font-weight: bolder;
+  margin-top: 2%;
 }

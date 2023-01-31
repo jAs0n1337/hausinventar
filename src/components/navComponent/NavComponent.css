@@ -1,18 +1,23 @@
 .Navbar {
-    background-color: aqua;
+    /* background-color: rgb(235, 235, 235); */
     display: flex;
     justify-content: flex-end;
-    padding: 20px;
-
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .Navbar ul {
     text-decoration: none;
     list-style-type: none;
+    padding-right: 10%;
 }
 
 .Navbar a {
     text-decoration: none;
     color: black;
     padding: 20px;
+    font-size: 1.5rem;
 }
