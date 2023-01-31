@@ -1,8 +1,8 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 10px;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 10px;
 }
 
 /*
@@ -10,36 +10,161 @@
 */
 
 .homeBackground {
-  height: 40vh;
-  background-image: url('./assets/img/home-background.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 -650px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	height: 40vh;
+	background-image: url('./assets/img/home-background.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -650px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .homeHeading {
-  font-size: 7rem;
-  font-family: fantasy;
+	font-size: 7rem;
+	font-family: fantasy;
+}
+
+.homeArticle a {
+	text-decoration: none;
+	color: black;
 }
 
 .homeImg {
-  width: 25rem;
+	width: 25rem;
 }
 
 .homeArticle {
-  padding-top: 12vh;
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+	padding-top: 12vh;
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 .homeDescription {
-  font-family: fantasy;
-  font-size: 1.9rem;
-  font-weight: bolder;
-  margin-top: 2%;
+	font-family: fantasy;
+	font-size: 1.9rem;
+	font-weight: bolder;
+	margin-top: 2%;
+}
+
+
+/*
+========== Styling for BIG STUFF ============
+*/
+
+.bigStuffSection {
+	padding: 20vh 0 0 20vh;
+}
+
+.bigStuffDiv {
+	width: 40%;
+	border: 1px solid black;
+	display: flex;
+	margin-bottom: 2%;
+}
+
+.bigStuffImg {
+	width: 60%;
+}
+
+.bigStuffText {
+	padding: 4% 0 0 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+.bigStuffHeading {
+	font-family: fantasy;
+	font-size: 3rem;
+}
+
+.bigStuffRoom {
+	font-size: 1.1rem;
+	margin-bottom: 30%;
+}
+
+.bigStuffDescription {
+	font-size: 1.5rem;
+}
+
+
+/*
+========== Styling for NOT SO BIG STUFF ============
+*/
+
+.notSoBigStuffSection {
+	padding: 20vh 0 0 20vh;
+}
+
+.notSoBigStuffDiv {
+	width: 40%;
+	border: 1px solid black;
+	display: flex;
+	margin-bottom: 2%;
+}
+
+.notSoBigStuffImg {
+	width: 60%;
+}
+
+.notSoBigStuffText {
+	padding: 4% 0 0 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+.notSoBigStuffHeading {
+	font-family: fantasy;
+	font-size: 3rem;
+}
+
+.notSoBigStuffRoom {
+	font-size: 1.1rem;
+	margin-bottom: 30%;
+}
+
+.notSoBigStuffDescription {
+	font-size: 1.5rem;
+}
+
+
+/*
+========== Styling for SMALL STUFF ============
+*/
+
+.smallStuffSection {
+	padding: 20vh 0 0 20vh;
+}
+
+.smallStuffDiv {
+	width: 40%;
+	border: 1px solid black;
+	display: flex;
+	margin-bottom: 2%;
+}
+
+.smallStuffImg {
+	width: 60%;
+}
+
+.smallStuffText {
+	padding: 4% 0 0 2%;
+	display: flex;
+	flex-direction: column;
+}
+
+.smallStuffHeading {
+	font-family: fantasy;
+	font-size: 3rem;
+}
+
+.smallStuffRoom {
+	font-size: 1.1rem;
+	margin-bottom: 30%;
+}
+
+.smallStuffDescription {
+	font-size: 1.5rem;
 }
