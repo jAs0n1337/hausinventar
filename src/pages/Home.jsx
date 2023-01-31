@@ -1,12 +1,14 @@
 import React from 'react'
-import NavComponent from '../components/navComponent/NavComponent'
+import Data from '../data';
 
 function Home() {
+    console.log(Data);
     return (
-        <div>
-            <h1>Home</h1>
+        <div className='homeBackground'>
+            <h1 className='homeHeading'>Meine Möbel</h1>
+
         </div>
     )
 }
 
-export default Home
+export default Home;
