@@ -51,120 +51,40 @@
 
 
 /*
-========== Styling for BIG STUFF ============
+===== Styling for BIG STUFF, NOT SO BIG STUFF, SMALL STUFF =====
 */
 
-.bigStuffSection {
+/* .createCardSection {
 	padding: 20vh 0 0 20vh;
 }
 
-.bigStuffDiv {
+.createCardDiv {
 	width: 40%;
 	border: 1px solid black;
 	display: flex;
 	margin-bottom: 2%;
 }
 
-.bigStuffImg {
+.createCardImg {
 	width: 60%;
 }
 
-.bigStuffText {
+.createCardText {
 	padding: 4% 0 0 2%;
 	display: flex;
 	flex-direction: column;
 }
 
-.bigStuffHeading {
+.createCardHeading {
 	font-family: fantasy;
 	font-size: 3rem;
 }
 
-.bigStuffRoom {
+.createCardRoom {
 	font-size: 1.1rem;
 	margin-bottom: 30%;
 }
 
-.bigStuffDescription {
+.createCardDescription {
 	font-size: 1.5rem;
-}
-
-
-/*
-========== Styling for NOT SO BIG STUFF ============
-*/
-
-.notSoBigStuffSection {
-	padding: 20vh 0 0 20vh;
-}
-
-.notSoBigStuffDiv {
-	width: 40%;
-	border: 1px solid black;
-	display: flex;
-	margin-bottom: 2%;
-}
-
-.notSoBigStuffImg {
-	width: 60%;
-}
-
-.notSoBigStuffText {
-	padding: 4% 0 0 2%;
-	display: flex;
-	flex-direction: column;
-}
-
-.notSoBigStuffHeading {
-	font-family: fantasy;
-	font-size: 3rem;
-}
-
-.notSoBigStuffRoom {
-	font-size: 1.1rem;
-	margin-bottom: 30%;
-}
-
-.notSoBigStuffDescription {
-	font-size: 1.5rem;
-}
-
-
-/*
-========== Styling for SMALL STUFF ============
-*/
-
-.smallStuffSection {
-	padding: 20vh 0 0 20vh;
-}
-
-.smallStuffDiv {
-	width: 40%;
-	border: 1px solid black;
-	display: flex;
-	margin-bottom: 2%;
-}
-
-.smallStuffImg {
-	width: 60%;
-}
-
-.smallStuffText {
-	padding: 4% 0 0 2%;
-	display: flex;
-	flex-direction: column;
-}
-
-.smallStuffHeading {
-	font-family: fantasy;
-	font-size: 3rem;
-}
-
-.smallStuffRoom {
-	font-size: 1.1rem;
-	margin-bottom: 30%;
-}
-
-.smallStuffDescription {
-	font-size: 1.5rem;
-}
+} */
