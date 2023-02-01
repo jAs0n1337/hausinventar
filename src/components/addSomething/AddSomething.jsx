@@ -10,6 +10,11 @@ const AddSomething = () => {
     };
 
     return (
+        /*
+        Ternary Operator verändert den state (addButton) und zeigt anhand true oder false das Formlar an.
+        Der Add Something Button wir ausgeblendet und das Formular erscheint.
+        Nach klick auf Publish verschwindet das Formular und der Button erscheint wieder
+        */
         <div className='div'>
             <button className={`AddSomething addSomethingButton ${addButton ? "hideForm" : ""}`} onClick={toggleButton} >Add Something</button>
             <div className={`AddSomething ${addButton ? "showForm" : "hideForm"}`}>

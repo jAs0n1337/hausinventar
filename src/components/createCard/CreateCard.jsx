@@ -2,6 +2,9 @@ import AddSomething from '../addSomething/AddSomething';
 import './CreateCard.css';
 
 const CreateCard = (props) => {
+    /*
+    Daten werden von der App.js an diese Komponente übergeben. Dann werden die props in data gespeichert. Über data kann gemapt werden
+    */
 
     const { data } = props;
     // console.log(data);

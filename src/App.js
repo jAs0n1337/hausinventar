@@ -10,7 +10,11 @@ import { useEffect, useState } from 'react';
 
 function App() {
 
-	/* FIREBASE ------------------ Datenbank */
+	/* 
+	FIREBASE ------------------ Datenbank
+	Funktoniert noch nicht.
+	Daten aus der Data.js sind alle in Firebase 
+	*/
 	const ref = collection(db, 'hausinventar');
 
 	const [data, setData] = useState([]);
@@ -48,6 +52,7 @@ function App() {
 
 	/* ENDE!!!!!!!!! FIREBASE ------------------ Datenbank */
 
+
 	const bigStuffItems = Data.filter(item => item.typ === "BigStuff");
 	const smallStuffItems = Data.filter(item => item.typ === "SmallStuff");
 	const notSoBigStuffItems = Data.filter(item => item.typ === "NotSoBigStuff");
@@ -57,6 +62,9 @@ function App() {
 			<Router>
 				<NavComponent />
 				<Routes>
+					{/*
+					Daten werden aus der Data.js an die Komponenten übergeben.
+					*/}
 					<Route path="/" element={<Home />} />
 					<Route path="/BigStuff" element={<CreateCard data={bigStuffItems} />} />
 					<Route path="/NotSoBigStuff" element={<CreateCard data={notSoBigStuffItems} />} />
