@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import NavComponent from './components/navComponent/NavComponent';
 import Data from './data';
 import CreateCard from './components/createCard/CreateCard';
+import AddSomething from './components/addSomething/AddSomething';
 
 function App() {
 
