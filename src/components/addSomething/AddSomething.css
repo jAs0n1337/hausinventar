@@ -1,0 +1,32 @@
+.hideForm {
+    display: none;
+    color: red;
+}
+.showForm {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+}
+
+.div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.addSomethingButton {
+    height: 30px;
+    width: 100px;
+}
+
+form {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.div input,
+textarea {
+    margin-bottom: 10%;
+}

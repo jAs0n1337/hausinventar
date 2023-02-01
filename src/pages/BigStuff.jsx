@@ -1,4 +1,5 @@
 import React from 'react';
+import AddSomething from '../components/addSomething/AddSomething';
 
 
 function BigStuff() {
@@ -9,4 +10,4 @@ function BigStuff() {
     )
 }
 
-export default BigStuff
+export default BigStuff;
