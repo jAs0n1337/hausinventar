@@ -2,6 +2,7 @@
     display: none;
     color: red;
 }
+
 .showForm {
     color: blue;
     display: flex;
@@ -17,6 +18,46 @@
 .addSomethingButton {
     height: 30px;
     width: 100px;
+    background-color: transparent;
+    box-shadow: 10px 10px 10px silver;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+.formClose {
+    text-align: right;
+}
+
+.formClose Button {
+    border: transparent;
+    background-color: transparent;
+}
+
+.fieldset {
+    padding: 20px;
+}
+
+.fieldset input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+    height: 30px;
+}
+
+.fieldset textarea {
+    resize: none;
+    width: 95%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.formButton {
+    height: 30px;
+    width: 95%;
+    background-color: transparent;
+    box-shadow: 10px 10px 10px silver;
+    border-radius: 8px;
+    border: 1px solid lightgray;
 }
 
 /* form {
@@ -39,12 +80,7 @@
     height: 100px;
 }
 
-.formClose {
-    margin-bottom: 10%;
-    margin-left: 85%;
-    background-color: transparent;
-    border: transparent;
-}
+
 
 .formButton {
     padding: 2%;

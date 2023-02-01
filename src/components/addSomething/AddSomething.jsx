@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './AddSomething.css'
 
 const AddSomething = () => {
@@ -14,9 +14,9 @@ const AddSomething = () => {
             <button className={`AddSomething addSomethingButton ${addButton ? "hideForm" : ""}`} onClick={toggleButton} >Add Something</button>
             <div className={`AddSomething ${addButton ? "showForm" : "hideForm"}`}>
                 <form>
-                    <fieldset>
-                        <legend>
-                            <button className='formClose'>❌</button>
+                    <fieldset className='fieldset'>
+                        <legend className='formClose'>
+                            <button>❌</button>
                         </legend>
                         <input type="text" placeholder='TITEL'></input>
                         <input type="text" placeholder='ROOM'></input>

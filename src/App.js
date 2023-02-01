@@ -4,15 +4,13 @@ import Home from './pages/Home';
 import NavComponent from './components/navComponent/NavComponent';
 import Data from './data';
 import CreateCard from './components/createCard/CreateCard';
-import AddSomething from './components/addSomething/AddSomething';
 
 function App() {
 
-	{/* Daten Filtern und an die Komponenten übergeben */ }
 	const bigStuffItems = Data.filter(item => item.typ === "BigStuff");
 	const smallStuffItems = Data.filter(item => item.typ === "SmallStuff");
 	const notSoBigStuffItems = Data.filter(item => item.typ === "NotSoBigStuff");
-	{/*================================================================================*/ }
+
 	return (
 		<div className="App">
 			<Router>
