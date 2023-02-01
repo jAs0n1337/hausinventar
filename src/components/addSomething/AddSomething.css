@@ -31,6 +31,7 @@
 .formClose Button {
     border: transparent;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .fieldset {

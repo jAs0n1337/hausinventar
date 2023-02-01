@@ -9,7 +9,7 @@ function NavComponent() {
                 <li>
                     <Link to={'/'}>Home</Link>
                     <Link to={'/BigStuff'}>Big stuff</Link>
-                    <Link to={'/NotSoBig'}>Not so Big stuff</Link>
+                    <Link to={'/NotSoBigStuff'}>Not so Big stuff</Link>
                     <Link to={'/SmallStuff'}>SmallStuff</Link>
                 </li>
             </ul>

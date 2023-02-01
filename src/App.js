@@ -5,7 +5,31 @@ import NavComponent from './components/navComponent/NavComponent';
 import Data from './data';
 import CreateCard from './components/createCard/CreateCard';
 
+import { db } from './Firebase';
+import { collection, getDocs, addDoc, updateDoc, getDoc, doc } from 'firebase/firestore';
+
 function App() {
+	/* FIREBASE ------------------ Datenbank */
+	const ref = collection(db, 'hausinventar');
+
+	const getData = async () => {
+		const data = await getDocs(ref);
+		// console.log(data.docs[0].data());
+	}
+
+	const setData = async (parameter) => {
+		addDoc(ref, parameter);
+	}
+
+	const updateDate = async (parameter) => {
+		const docRef = doc(db, "hausinventar", "furniture")
+		const data = await getDoc(docRef)
+		await updateDoc(docRef, { ...data.data(), ALLES1: parameter })
+	}
+	// updateDate({ Bad: "wie geleckt" });
+
+	getData();
+	/* ENDE!!!!!!!!! FIREBASE ------------------ Datenbank */
 
 	const bigStuffItems = Data.filter(item => item.typ === "BigStuff");
 	const smallStuffItems = Data.filter(item => item.typ === "SmallStuff");
