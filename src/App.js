@@ -20,7 +20,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/BigStuff" element={<CreateCard data={bigStuffItems} />} />
-					<Route path="/NotSoBig" element={<CreateCard data={notSoBigStuffItems} />} />
+					<Route path="/NotSoBigStuff" element={<CreateCard data={notSoBigStuffItems} />} />
 					<Route path="/SmallStuff" element={<CreateCard data={smallStuffItems} />} />
 				</Routes>
 			</Router>
