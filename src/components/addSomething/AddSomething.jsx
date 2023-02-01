@@ -3,7 +3,7 @@ import './AddSomething.css'
 
 const AddSomething = () => {
     const [addButton, setAddButton] = useState(false);
-    console.log(addButton)
+    // console.log(addButton)
 
     const toggleButton = () => {
         setAddButton(prev => !prev);

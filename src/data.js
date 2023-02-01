@@ -71,7 +71,7 @@ const data = [
     },
     {
         img: Lamp1,
-        name: "Lampe",
+        name: "Hängelampe",
         room: "Wohnzimmer",
         description: "Wunderschöne Hängelampe aus Gold. Sie ist höhenverstell und dimmbar.",
         typ: "NotSoBigStuff"

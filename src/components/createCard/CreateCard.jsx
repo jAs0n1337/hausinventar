@@ -4,7 +4,7 @@ import './CreateCard.css';
 const CreateCard = (props) => {
 
     const { data } = props;
-    console.log(data);
+    // console.log(data);
 
     return (
         <section className='createCardSection'>
