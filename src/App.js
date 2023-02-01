@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
-import BigStuff from './pages/BigStuff';
 import NavComponent from './components/navComponent/NavComponent';
 import Data from './data';
+import CreateCard from './components/createCard/CreateCard';
 
 function App() {
 
@@ -18,9 +18,9 @@ function App() {
 				<NavComponent />
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/BigStuff" element={<BigStuff data={bigStuffItems} />} />
-					<Route path="/NotSoBig" element={<BigStuff data={notSoBigStuffItems} />} />
-					<Route path="/SmallStuff" element={<BigStuff data={smallStuffItems} />} />
+					<Route path="/BigStuff" element={<CreateCard data={bigStuffItems} />} />
+					<Route path="/NotSoBig" element={<CreateCard data={notSoBigStuffItems} />} />
+					<Route path="/SmallStuff" element={<CreateCard data={smallStuffItems} />} />
 				</Routes>
 			</Router>
 		</div>

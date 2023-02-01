@@ -1,7 +1,6 @@
 import Bed from './assets/img/bed.jpeg';
 import Candle from './assets/img/candle.jpeg';
 import Chair1 from './assets/img/chair1.jpeg';
-import Chair2 from './assets/img/chair2.jpeg';
 import Coffemachine from './assets/img/coffemachine.jpeg';
 import Couch from './assets/img/couch.jpeg';
 import Cutlery from './assets/img/cutlery.jpeg';
@@ -18,98 +17,91 @@ const data = [
         img: Bed,
         name: "Bett",
         room: "Schlafzimmer",
-        description: "Mein sehr bequemes Bett",
+        description: "Mein Bett ist aus Akazienholz. Mit dabei eine 7 Zonen Matratze und Bettdecke sowie Kissen gefüllt mit Daunen. ",
         typ: "BigStuff"
     },
     {
         img: Candle,
         name: "Kerze",
         room: "Schlafzimmer",
-        description: "Romantische Kerze",
+        description: "Diese Duftkerze verbreitet einen angenehmen Duft nach Honig.",
         typ: "SmallStuff"
     },
     {
         img: Chair1,
         name: "Stuhl",
         room: "Wohnzimmer",
-        description: "Toller Stuhl",
-        typ: "NotSoBigStuff"
-    },
-    {
-        img: Chair2,
-        name: "Stuhl",
-        room: "Eßzimmer",
-        description: "Noch ein Stuhl",
+        description: "Cremefarbener Polsterstuhl. Durch seine angenehme Form ist er perfekt für lange Abende.",
         typ: "NotSoBigStuff"
     },
     {
         img: Coffemachine,
         name: "Kaffeemaschine",
         room: "Küche",
-        description: "Hier gibts jeden Morgen teuren Katzenkaffee",
+        description: "Nicht elektronische Kaffeemaschine. Aus echtem Silber für den morgendlichen Kick.",
         typ: "SmallStuff"
     },
     {
         img: Couch,
         name: "Couch",
         room: "Wohnzimmer",
-        description: "Meine tolle Ledercouch (sehr pflegeleicht)",
+        description: "3 - Sitzer Couch aus echtem Rindsleder.",
         typ: "BigStuff"
     },
     {
         img: Cutlery,
         name: "Besteck",
         room: "Küche",
-        description: "Damit die Finger nicht schmuddelig werden",
+        description: "Aus echtem Silber und sehr schlicht.",
         typ: "SmallStuff"
     },
     {
         img: Desk,
         name: "Schreibtisch",
         room: "Wohnzimmer",
-        description: "Hier verbringe ich schöne Tage mit Supercode",
+        description: "Mein Schreibtisch ist einfach aber hochwertig. Zwei Ablagefächer bieten genug Platz um alles notwendige grifbereit zu haben.",
         typ: "BigStuff"
     },
     {
         img: Lamp,
         name: "Lampe",
         room: "Schlafzimmer",
-        description: "Wegen dieser Lampe ist mein kleiner Zeh sehr glücklich",
+        description: "Die Lampe ist aus Rosegold und paßt perfekt zum Stil meines hell dekoriertem Schlafzimmer. Durch Berührung wir die Lampe bedient.",
         typ: "SmallStuff"
     },
     {
         img: Lamp1,
         name: "Lampe",
         room: "Wohnzimmer",
-        description: "Auch darüber freut sich mein Zeh",
-        typ: "SmallStuff"
+        description: "Wunderschöne Hängelampe aus Gold. Sie ist höhenverstell und dimmbar.",
+        typ: "NotSoBigStuff"
     },
     {
         img: Plant,
         name: "Pflanze",
         room: "Bad",
-        description: "Macht mein Bad schöner",
+        description: "Buchbäumchen. Sieht zum verwechseln echt aus.",
         typ: "SmallStuff"
     },
     {
         img: Table1,
-        name: "Beistelltisch",
+        name: "Kleiner Tisch",
         room: "Wohnzimmer",
-        description: "Für Kleinigkeiten",
-        typ: "BigStuff"
+        description: "Der Tisch hat eine ansprechend glänzende Platte. Ist aber auch sehr pflegeintensiv. Beine sind aus hellem Holz.",
+        typ: "NotSoBigStuff"
     },
     {
         img: Table2,
         name: "Beistelltisch",
         room: "Schlafzimmer",
-        description: "Noch mehr Kleinigkeiten",
-        typ: "BigStuff"
+        description: "Weiß lackiert und ungefähr einen Durchmesser von 40 cm. Genug Platz für Wecker, Lampe und Deko.",
+        typ: "NotSoBigStuff"
     },
     {
         img: Toothbrush,
         name: "Zahnbürste",
         room: "Bad",
-        description: "Diese Zahnbürste findet man bei Unsplash wenn man nach Klobürste sucht!!!",
+        description: "Umweltfreundliche Zahnbürste. Material: Bambus.",
         typ: "SmallStuff"
     },
 ];
