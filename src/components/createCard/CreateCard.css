@@ -7,7 +7,7 @@
     height: 12vw;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(135, 135, 135);
-	margin-bottom: 2%;
+	margin-bottom: 10%;
     display: grid;
     grid-template-columns: 40% 50% 10%;
 }

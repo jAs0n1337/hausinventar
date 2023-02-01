@@ -4,21 +4,28 @@ import Home from './pages/Home';
 import NavComponent from './components/navComponent/NavComponent';
 import Data from './data';
 import CreateCard from './components/createCard/CreateCard';
-
 import { db } from './Firebase';
 import { collection, getDocs, addDoc, updateDoc, getDoc, doc } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
 
 function App() {
+
 	/* FIREBASE ------------------ Datenbank */
 	const ref = collection(db, 'hausinventar');
 
+	const [data, setData] = useState([]);
+
 	const getData = async () => {
 		const data = await getDocs(ref);
-		// console.log(data.docs[0].data());
+		console.log(data.docs[0].data());
 	}
 
-	const setData = async (parameter) => {
-		addDoc(ref, parameter);
+	const setNewData = async (parameter) => {
+		if (parameter && typeof parameter === 'object') {
+			addDoc(ref, parameter);
+		} else {
+			console.error('Invalid data object');
+		}
 	}
 
 	const updateDate = async (parameter) => {
@@ -29,6 +36,16 @@ function App() {
 	// updateDate({ Bad: "wie geleckt" });
 
 	getData();
+
+	useEffect(() => {
+		const fetchData = async () => {
+			const response = await getData();
+			setData(response);
+		};
+		fetchData();
+	}, []);
+
+
 	/* ENDE!!!!!!!!! FIREBASE ------------------ Datenbank */
 
 	const bigStuffItems = Data.filter(item => item.typ === "BigStuff");
