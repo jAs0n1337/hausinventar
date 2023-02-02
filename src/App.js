@@ -15,45 +15,33 @@ function App() {
 	Funktoniert noch nicht.
 	Daten aus der Data.js sind alle in Firebase 
 	*/
+
+
 	const ref = collection(db, 'hausinventar');
 
-	const [data, setData] = useState([]);
-
-	const getData = async () => {
-		const data = await getDocs(ref);
-		console.log(data.docs[0].data());
-	}
-
-	const setNewData = async (parameter) => {
-		if (parameter && typeof parameter === 'object') {
-			addDoc(ref, parameter);
-		} else {
-			console.error('Invalid data object');
-		}
-	}
-
-	const updateDate = async (parameter) => {
-		const docRef = doc(db, "hausinventar", "furniture")
-		const data = await getDoc(docRef)
-		await updateDoc(docRef, { ...data.data(), ALLES1: parameter })
-	}
-	// updateDate({ Bad: "wie geleckt" });
-
-	getData();
+	const [data, setData] = useState({ docs: [] });
+	// console.log(data);
 
 	useEffect(() => {
-		const fetchData = async () => {
-			const response = await getData();
-			setData(response);
-		};
-		fetchData();
+
+		const getData = async () => {
+			const data = await getDocs(ref);
+			setData(data);
+			console.log(data.docs[0].data());
+		}
+		getData();
 	}, []);
+
+	const bigStuffItems = data.docs
+		.filter(doc => doc.data().typ === "BigStuff")
+		.map(doc => doc.data());
+	console.log(bigStuffItems);
 
 
 	/* ENDE!!!!!!!!! FIREBASE ------------------ Datenbank */
 
 
-	const bigStuffItems = Data.filter(item => item.typ === "BigStuff");
+	// const bigStuffItems = Data.filter(item => item.typ === "BigStuff");
 	const smallStuffItems = Data.filter(item => item.typ === "SmallStuff");
 	const notSoBigStuffItems = Data.filter(item => item.typ === "NotSoBigStuff");
 
