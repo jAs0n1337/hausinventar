@@ -19,23 +19,26 @@ function App() {
 
 	const ref = collection(db, 'hausinventar');
 
-	const [data, setData] = useState({ docs: [] });
-	// console.log(data);
+	const [data, setData] = useState([]);
+	console.log(data);
 
 	useEffect(() => {
-
 		const getData = async () => {
 			const data = await getDocs(ref);
-			setData(data);
-			console.log(data.docs[0].data());
-		}
+			const docsData = [];
+			data.docs.forEach(doc => {
+				docsData.push(doc.data());
+			});
+			setData(docsData);
+		};
 		getData();
 	}, []);
 
-	const bigStuffItems = data.docs
-		.filter(doc => doc.data().typ === "BigStuff")
-		.map(doc => doc.data());
+	const bigStuffItems = data.filter(item => item.typ === "BigStuff");
 	console.log(bigStuffItems);
+
+
+
 
 
 	/* ENDE!!!!!!!!! FIREBASE ------------------ Datenbank */
