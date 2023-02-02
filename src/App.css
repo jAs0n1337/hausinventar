@@ -11,6 +11,7 @@
 
 .homeBackground {
 	height: 40vh;
+	margin-bottom: 5vh;
 	background-image: url('./assets/img/home-background.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
