@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import NavComponent from './components/navComponent/NavComponent';
-import Data from './data';
 import CreateCard from './components/createCard/CreateCard';
 import { db } from './Firebase';
 import { collection, getDocs, addDoc, updateDoc, getDoc, doc } from 'firebase/firestore';
@@ -12,38 +11,32 @@ function App() {
 
 	/* 
 	FIREBASE ------------------ Datenbank
-	Funktoniert noch nicht.
-	Daten aus der Data.js sind alle in Firebase 
+	Wir bekommen die Daten und können sie anzeigen
 	*/
-
 
 	const ref = collection(db, 'hausinventar');
 
-	const [data, setData] = useState({ docs: [] });
-	// console.log(data);
+	const [data, setData] = useState([]);
+	console.log(data);
 
 	useEffect(() => {
-
 		const getData = async () => {
 			const data = await getDocs(ref);
-			setData(data);
-			console.log(data.docs[0].data());
-		}
+			const docsData = [];
+			data.docs.forEach(doc => {
+				console.log(doc.data());
+				setData(doc.data().data);
+			});
+		};
 		getData();
 	}, []);
 
-	const bigStuffItems = data.docs
-		.filter(doc => doc.data().typ === "BigStuff")
-		.map(doc => doc.data());
-	console.log(bigStuffItems);
-
-
+	const bigStuffItems = data.filter(item => item.typ === "BigStuff");
+	const smallStuffItems = data.filter(item => item.typ === "SmallStuff");
+	const notSoBigStuffItems = data.filter(item => item.typ === "NotSoBigStuff");
+	// console.log(bigStuffItems);
+	// console.log("Hallo", data.length);
 	/* ENDE!!!!!!!!! FIREBASE ------------------ Datenbank */
-
-
-	// const bigStuffItems = Data.filter(item => item.typ === "BigStuff");
-	const smallStuffItems = Data.filter(item => item.typ === "SmallStuff");
-	const notSoBigStuffItems = Data.filter(item => item.typ === "NotSoBigStuff");
 
 	return (
 		<div className="App">
@@ -51,7 +44,7 @@ function App() {
 				<NavComponent />
 				<Routes>
 					{/*
-					Daten werden aus der Data.js an die Komponenten übergeben.
+					Daten werden aus Firebase geholt und an die Komponenten übergeben.
 					*/}
 					<Route path="/" element={<Home />} />
 					<Route path="/BigStuff" element={<CreateCard data={bigStuffItems} />} />

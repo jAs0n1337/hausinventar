@@ -7,7 +7,6 @@ const CreateCard = (props) => {
     */
 
     const { data } = props;
-    // console.log(data);
 
     return (
         <section className='createCardSection'>
